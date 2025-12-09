@@ -19,15 +19,15 @@ export default function App() {
         <input placeholder="Nom du joueur 1"></input>
         <input placeholder="Nom du joueur 2"></input>
         <div className="grid grid-cols-3 gap-6">
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
-          <Buttons />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
+          <Buttons turn={turn} />
         </div>
       </div>
     </>

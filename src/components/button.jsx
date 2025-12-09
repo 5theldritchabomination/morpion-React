@@ -1,4 +1,4 @@
-export default function Buttons() {
+export default function Buttons(turn) {
   const getClicked = () => {
     if (turn) {
     } else {
