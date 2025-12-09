@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import buttons from './components/button.jsx';
+import Buttons from './components/button.jsx';
 
 export default function App() {
   const [score_p1, setScorep1] = useState(0);
@@ -12,11 +12,6 @@ export default function App() {
       setTurn(0);
     }
   };
-  const getClicked = () => {
-    if (turn) {
-    } else {
-    }
-  };
 
   return (
     <>
@@ -24,15 +19,15 @@ export default function App() {
         <input placeholder="Nom du joueur 1"></input>
         <input placeholder="Nom du joueur 2"></input>
         <div className="grid grid-cols-3 gap-6">
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
-          <buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
+          <Buttons />
         </div>
       </div>
     </>
