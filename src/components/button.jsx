@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
 export default function Buttons(turn) {
-  const [played, setPlayed] = useState(0);
+  const [played, setPlayed] = useState(null);
+
   const getClicked = () => {
-    if (turn) {
-      setPlayed('1');
+    if (turn % 2 == 0) {
+      setPlayed('X');
     } else {
-      setPlayed('2');
+      setPlayed('O');
     }
   };
 
